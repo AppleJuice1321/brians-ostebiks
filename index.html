@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="da">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brain's Ostebiks</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header class="siteHeader">
+        <!-- Steve Crock (don't make me think book) We read and observe a website in a direction like the letter F -->
+        <!-- utility class not necessary for BEM -->
+        <!-- sr-only is a convention -->
+        <a href="./" class="siteHeader__brand">Bians Ostebiks</a>
+        <button class="burgerMenuButton">
+            <i data-feather="menu"></i>
+            <!-- WAI-ARIA, accessebility -->
+            <span class="sr-only">Menu</span>
+        </button>
+        <nav class="primaryNavigation" aria-hidden="true">
+            <a href="#content" class="sr-only">Spring til indholdet</a>
+            <menu class="primaryNavigation__menu">
+                <li class="primaryNavigation__menuItem"><a href="#" class="primaryNavigation_link">Link 1</a></li>
+                <li class="primaryNavigation__menuItem"><a href="#" class="primaryNavigation_link">Link 2</a></li>
+                <li class="primaryNavigation__menuItem"><a href="#" class="primaryNavigation_link">Link 3</a></li>
+            </menu>
+        </nav>
+    </header>
+    <main id="content">
+        <section class="highlights">
+            <article class="highlights_article">
+                <img class="highlights__image" src="https://Bear" alt="Bill Murray">
+                <h1 class="highlights__heading">Oste med ost på</h1>
+                <p class="highlights__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea aut, totam aliquid quos commodi corrupti placeat inventore, quaerat vel et velit reprehenderit quibusdam sit blanditiis animi quis quae iure nisi.</p>
+            </article>
+        </section>
+    </main>
+    <script src="https://unpkg.com/feather-icons"></script>
+    <script>
+        feather.replace()
+    </script>
+    <script src="./assets/script/burgermenu.js" defer></script>
+</body>
+
+</html>
